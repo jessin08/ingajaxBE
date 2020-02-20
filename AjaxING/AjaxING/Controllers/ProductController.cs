@@ -24,15 +24,17 @@ namespace AjaxING.Controllers
         /// <summary>
         /// Get the product details based on product category
         /// </summary>
-        /// <param name="productGroupID">productGroupID</param>
+        /// <param name="userID">user ID</param>
+        /// <param name="productId">product ID</param>
         /// <returns>OkNegotiatedContent</returns>
-        [Route("Get")]
-        public IHttpActionResult GetProductDetails([FromUri]string productGroupID)
+        [HttpGet]
+        [Route("ProductDetails")]
+        public IHttpActionResult ProductDetails([FromUri]string userID, [FromUri]string productId)
         {
-            _logger.Info("Logon service : GetProductDetails method called");
-            var result = "";
-            _logger.Info("Logon service : GetProductDetails method passed");
-            return Ok(result);
+            _logger.Info("Product service : ProductDetails method called");
+            var obj = _repository.ProductDetails(userID, productId);
+            _logger.Info("Product service : ProductDetails method passed");
+            return Ok(obj);
         }
     }
 }
