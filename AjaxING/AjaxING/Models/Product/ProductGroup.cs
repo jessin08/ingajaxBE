@@ -12,8 +12,6 @@ namespace AjaxING.Models.Product
         public string ProductName { get; set; }
     }
 
-
-
     public class ProductDetail
     {
         [JsonProperty("productGroupId")]
