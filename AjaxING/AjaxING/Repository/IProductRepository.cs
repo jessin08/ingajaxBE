@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AjaxING.Models.Product;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -9,6 +10,6 @@ namespace AjaxING.Repository
 {
     public interface IProductRepository
     {
-        HttpResponseMessage LoginUser();
+        ProductDetails ProductDetails(string userID, string productId);
     }
 }

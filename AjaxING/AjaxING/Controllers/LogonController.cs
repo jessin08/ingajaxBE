@@ -12,13 +12,15 @@ namespace AjaxING.Controllers
     {
         #region Properties
         private ILogonRepository _repository;
+        private IProductRepository _productRepository;
         private static Logger _logger = LogManager.GetCurrentClassLogger();
 
         #endregion
 
-        public LogonController(ILogonRepository repository)
+        public LogonController(ILogonRepository repository, IProductRepository productRepository)
         {
             _repository = repository;
+            _productRepository = productRepository;
         }
 
         [HttpGet]
@@ -26,6 +28,14 @@ namespace AjaxING.Controllers
         public IHttpActionResult LoginUser([FromUri]string userID, [FromUri]string password)
         {
             var obj = _repository.LoginUser(userID, password);
+            return Ok(obj);
+        }
+
+        [HttpGet]
+        [Route("ProductDetails")]
+        public IHttpActionResult ProductDetails([FromUri]string userID, [FromUri]string productId)
+        {
+            var obj = _productRepository.ProductDetails(userID, productId);
             return Ok(obj);
         }
     }
