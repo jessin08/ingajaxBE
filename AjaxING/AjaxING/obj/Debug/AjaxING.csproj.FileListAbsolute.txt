@@ -575,3 +575,5 @@ C:\Users\4moin\OneDrive\Desktop\New folder (2)\ingajaxBE\AjaxING\AjaxING\bin\Uni
 C:\Users\4moin\OneDrive\Desktop\New folder (2)\ingajaxBE\AjaxING\AjaxING\bin\Antlr3.Runtime.pdb
 C:\Users\4moin\OneDrive\Desktop\New folder (2)\ingajaxBE\AjaxING\AjaxING\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\4moin\OneDrive\Desktop\New folder (2)\ingajaxBE\AjaxING\AjaxING\obj\Debug\AjaxING.csproj.CopyComplete
+D:\Shabari\ingajaxBE\AjaxING\AjaxING\bin\EntityFramework.dll
+D:\Shabari\ingajaxBE\AjaxING\AjaxING\bin\EntityFramework.xml
