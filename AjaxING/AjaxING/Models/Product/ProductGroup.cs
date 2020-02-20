@@ -35,4 +35,16 @@ namespace AjaxING.Models.Product
         [JsonProperty("productDetails")]
         public List<ProductDetail> ProductDetails { get; set; }
     }
+
+    public class ProductDetails
+    {
+        [JsonProperty("productId")]
+        public int ProductId { get; set; }
+
+        [JsonProperty("productGroupId")]
+        public int ProductGroupId { get; set; }
+
+        [JsonProperty("productDetails")]
+        public List<KeyValuePair<string, string>> UserProductDetails { get; set; }
+    }
 }

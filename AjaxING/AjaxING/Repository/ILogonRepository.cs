@@ -11,5 +11,6 @@ namespace AjaxING.Repository
     public interface ILogonRepository
     {
         LoginData LoginUser(string userID, string password);
+
     }
 }
