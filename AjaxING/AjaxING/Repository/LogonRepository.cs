@@ -18,6 +18,7 @@ namespace AjaxING.Repository
             if(userDetails != null)
             {
                 objLoginData.UserType = dBEntities.UserTypes.FirstOrDefault(m=>m.UserTypeId == userDetails.UserType.UserTypeId).TypeName;
+                objLoginData.UserId = Convert.ToString(userDetails.UserId);
                 objLoginData.ProductDetails = new List<ProductDetail>();
                 var productDetails = dBEntities.UserProductGroups.Where(m => m.UserId == userDetails.UserId);
                 foreach(var item in productDetails)

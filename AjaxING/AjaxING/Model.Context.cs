@@ -31,5 +31,6 @@ namespace AjaxING
         public DbSet<UserProduct> UserProducts { get; set; }
         public DbSet<UserProductGroup> UserProductGroups { get; set; }
         public DbSet<UserType> UserTypes { get; set; }
+        public DbSet<ErrorLog> ErrorLogs { get; set; }
     }
 }

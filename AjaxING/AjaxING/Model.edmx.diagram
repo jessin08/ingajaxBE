@@ -20,6 +20,7 @@
         <AssociationConnector Association="DbModel.FK__UserProdu__UserI__619B8048" ManuallyRouted="false" />
         <AssociationConnector Association="DbModel.FK__UserProdu__UserI__628FA481" ManuallyRouted="false" />
         <AssociationConnector Association="DbModel.FK__UserProdu__Produ__60A75C0F" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbModel.ErrorLog" Width="1.5" PointX="5.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

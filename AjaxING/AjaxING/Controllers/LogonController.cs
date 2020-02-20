@@ -1,4 +1,5 @@
-﻿using AjaxING.Repository;
+﻿using AjaxING.ErrorLogging;
+using AjaxING.Repository;
 using NLog;
 using System.Web.Http;
 
@@ -41,8 +42,16 @@ namespace AjaxING.Controllers
         [Route("ProductDetails")]
         public IHttpActionResult ProductDetails([FromUri]string userID, [FromUri]string productId)
         {
-            var obj = _productRepository.ProductDetails(userID, productId);
-            return Ok(obj);
+            try
+            {
+                var obj = _productRepository.ProductDetails(userID, productId);
+                return Ok(obj);
+            }
+            catch(Exception ex)
+            {
+               var errorLog = ErrorLogger.Instance;
+                errorLog.
+            }
         }
     }
 }

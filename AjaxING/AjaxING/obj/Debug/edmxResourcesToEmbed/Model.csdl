@@ -228,5 +228,13 @@
       <End Role="UserProductGroup" EntitySet="UserProductGroups" />
       <End Role="UserProduct" EntitySet="UserProducts" />
     </AssociationSet>
+    <EntitySet Name="ErrorLogs" EntityType="DbModel.ErrorLog" />
   </EntityContainer>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="ErrorId" />
+    </Key>
+    <Property Name="ErrorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ErrorDescription" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
 </Schema>
