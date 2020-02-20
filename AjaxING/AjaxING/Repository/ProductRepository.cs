@@ -8,7 +8,9 @@ namespace AjaxING.Repository
 {
     public class ProductRepository : IProductRepository
     {
-        public HttpResponseMessage GetProductDetails()
+
+       
+        public HttpResponseMessage LoginUser()
         {
             throw new NotImplementedException();
         }

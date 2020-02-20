@@ -9,6 +9,6 @@ namespace AjaxING.Repository
 {
     public interface IProductRepository
     {
-        HttpResponseMessage GetProductDetails();
+        HttpResponseMessage LoginUser();
     }
 }

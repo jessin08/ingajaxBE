@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2f359efaf1614e3695dfe0eab9343850" Name="Diagram1">
+        <EntityTypeShape EntityType="DbModel.Product" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.ProductGroup" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.UserDetail" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.UserProduct" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.UserProductGroup" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbModel.UserType" Width="1.5" PointX="1.5" PointY="11.875" IsExpanded="true" />
+        <AssociationConnector Association="DbModel.FK__Product__Product__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="DbModel.FK__UserProdu__Produ__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="DbModel.FK_Product_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DbModel.FK__UserProdu__Produ__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="DbModel.FK__UserDetai__UserT__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="DbModel.FK__UserProdu__UserI__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="DbModel.FK__UserProdu__UserI__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="DbModel.FK__UserProdu__UserI__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="DbModel.FK__UserProdu__Produ__60A75C0F" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

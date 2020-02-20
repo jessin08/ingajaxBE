@@ -4,11 +4,12 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using AjaxING.Models.Product;
 
 namespace AjaxING.Repository
 {
     public interface ILogonRepository
     {
-        HttpResponseMessage GetProducts();
+        LoginData LoginUser(string userID, string password);
     }
 }
