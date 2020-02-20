@@ -12,6 +12,7 @@ namespace AjaxING
         public static void Register()
         {
             var thisAssembly = typeof(SwaggerConfig).Assembly;
+            GlobalConfiguration.Configuration.EnableSwagger(c => c.SingleApiVersion("v1", "A title for your API")).EnableSwaggerUi();
 
             GlobalConfiguration.Configuration
                 .EnableSwagger(c =>
@@ -61,7 +62,7 @@ namespace AjaxING
                         //c.BasicAuth("basic")
                         //    .Description("Basic HTTP Authentication");
                         //
-						// NOTE: You must also configure 'EnableApiKeySupport' below in the SwaggerUI section
+                        // NOTE: You must also configure 'EnableApiKeySupport' below in the SwaggerUI section
                         //c.ApiKey("apiKey")
                         //    .Description("API Key Authentication")
                         //    .Name("apiKey")

@@ -18,14 +18,17 @@ namespace AjaxING.ErrorLogging
         {
             get
             {
-                lock (padlock)
+                if (instance == null)
                 {
-                    if (instance == null)
+                    lock (padlock)
                     {
-                        instance = new ErrorLogger();
+                        if (instance == null)
+                        {
+                            instance = new ErrorLogger();
+                        }
                     }
-                    return instance;
                 }
+                return instance;
             }
         }
 

@@ -36,6 +36,7 @@ namespace AjaxING.Controllers
             _logger.Info("Logon service : LoginUser method called");
             var obj = _repository.LoginUser(userID, password);
             _logger.Info("Logon service : LoginUser method passed");
+            //ErrorLogger.Instance = 
             return Ok(obj);
         }
     }

@@ -24,7 +24,8 @@ namespace AjaxING.Repository
             objProductdetails.UserProductDetails = new List<KeyValuePair<string, string>>();
             objProductdetails.UserProductDetails.Add(new KeyValuePair<string, string>("accountNumber", userProduct.FirstOrDefault().AccountNumber));
             objProductdetails.UserProductDetails.Add(new KeyValuePair<string, string>("balance", userProduct.FirstOrDefault().Balance.ToString()));
-            objProductdetails.UserProductDetails.Add(new KeyValuePair<string, string>("debitCardNumber", userProduct.FirstOrDefault().DebitCardNumber));
+            if (userProduct.FirstOrDefault().DebitCardNumber != "")
+                objProductdetails.UserProductDetails.Add(new KeyValuePair<string, string>("debitCardNumber", userProduct.FirstOrDefault().DebitCardNumber));
 
             return objProductdetails;
         }
