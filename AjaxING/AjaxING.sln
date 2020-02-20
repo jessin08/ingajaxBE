@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxING", "AjaxING\AjaxING.csproj", "{78E3E06A-83DE-46A2-854F-246F56A6BF85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxING.Tests", "AjaxING.Tests\AjaxING.Tests.csproj", "{EFDC6FDD-E2F9-4698-ACD8-F22CB8EF9E3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78E3E06A-83DE-46A2-854F-246F56A6BF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E3E06A-83DE-46A2-854F-246F56A6BF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E3E06A-83DE-46A2-854F-246F56A6BF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E3E06A-83DE-46A2-854F-246F56A6BF85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFDC6FDD-E2F9-4698-ACD8-F22CB8EF9E3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDC6FDD-E2F9-4698-ACD8-F22CB8EF9E3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDC6FDD-E2F9-4698-ACD8-F22CB8EF9E3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDC6FDD-E2F9-4698-ACD8-F22CB8EF9E3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7D4CA00-4820-404B-8CE3-DA5FC9CFF5EF}
+	EndGlobalSection
+EndGlobal
