@@ -9,16 +9,17 @@ namespace AjaxING.Controllers
     {
         #region Properties
         private ILogonRepository _repository;
-        private IProductRepository _productRepository;
         private static Logger _logger = LogManager.GetCurrentClassLogger();
 
         #endregion
 
-
-        public LogonController(ILogonRepository repository, IProductRepository productRepository)
+        /// <summary>
+        /// The Contructor initializer
+        /// </summary>
+        /// <param name="repository">ILogonRepository</param>
+        public LogonController(ILogonRepository repository)
         {
             _repository = repository;
-            _productRepository = productRepository;
         }
 
         /// <summary>
@@ -34,14 +35,6 @@ namespace AjaxING.Controllers
             _logger.Info("Logon service : LoginUser method called");
             var obj = _repository.LoginUser(userID, password);
             _logger.Info("Logon service : LoginUser method passed");
-            return Ok(obj);
-        }
-
-        [HttpGet]
-        [Route("ProductDetails")]
-        public IHttpActionResult ProductDetails([FromUri]string userID, [FromUri]string productId)
-        {
-            var obj = _productRepository.ProductDetails(userID, productId);
             return Ok(obj);
         }
     }
